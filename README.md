@@ -1,3 +1,31 @@
+# Ritual Academy Bootcamp Level 2
+Self-Resolving Prediction Market – My Homework
+
+Name: Emily Chen  
+Date finished: 17 August 2026
+
+I attended the live session and then spent extra time reading the code so I could really understand it instead of just copying.
+
+### What the project actually does
+You create a market with a question and a resolution rule.  
+People bet YES or NO with native RITUAL.  
+At the exact block you set, the Scheduler automatically calls the contract.  
+The contract fetches real-world data using the HTTP precompile, extracts the number with jq, and settles the market.  
+If everything fails three times, everyone gets their money back.
+
+### Things I made sure I understood
+- Why they convert everything to block numbers
+- How the three retry attempts are booked in one transaction
+- How the HTTP call runs inside a TEE
+- What happens when the oracle is down or returns bad data
+- How winners calculate and claim their share without gas problems
+
+### Current situation
+The public testnet closed before I could deploy.  
+I still went through all the important files and the test suite carefully.  
+I now feel confident I could deploy and run this on mainnet.
+
+Thank you to Can and the team for the clear explanations during the session.
 # Ritual Predict
 
 A self-resolving binary prediction market on [Ritual Chain](https://docs.ritualfoundation.org).
