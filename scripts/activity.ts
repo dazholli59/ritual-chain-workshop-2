@@ -61,3 +61,14 @@ for (
     "activities",
   );
 }
+console.log("");
+
+console.log(
+  "Quick check:",
+);
+
+console.log(
+  activities.length === 0
+    ? "No activity found"
+    : "Activity data found",
+);
